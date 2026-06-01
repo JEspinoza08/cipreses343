@@ -25,7 +25,11 @@ A pasos de todo lo que importa, en una calle tranquila y llena de árboles.
 
             <div className="mt-12 space-y-5 text-sm">
               <Row label="Dirección" value="Calle Los Cipreses 343, San Isidro · Lima" />
-              <Row label="Correo" value="ventas@ezd.com.pe" />
+              <Row
+  label="Correo"
+  value="sebastian@ezd.com.pe"
+  href="mailto:sebastian@ezd.com.pe"
+/>
               <Row label="Teléfono" value="+51 953 849 058" />
             </div>
 
@@ -149,13 +153,31 @@ function Field({
   );
 }
 
-function Row({ label, value }: { label: string; value: string }) {
+function Row({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value: string;
+  href?: string;
+}) {
   return (
     <div className="flex items-baseline justify-between gap-6 border-b border-white/5 pb-3">
       <span className="text-[10px] uppercase tracking-[0.3em] text-bone/50">
         {label}
       </span>
-      <span className="text-right font-light text-bone/85">{value}</span>
+
+      {href ? (
+        <a
+          href={href}
+          className="text-right font-light text-bone/85 transition-colors hover:text-gold"
+        >
+          {value}
+        </a>
+      ) : (
+        <span className="text-right font-light text-bone/85">{value}</span>
+      )}
     </div>
   );
 }
