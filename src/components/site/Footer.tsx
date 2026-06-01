@@ -9,11 +9,11 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <img
                 src={logo}
-                alt="EDZ Cipreses 343"
+                alt="EZD Cipreses 343"
                 className="h-10 w-10 rounded-sm object-cover ring-1 ring-white/10"
               />
               <div>
-                <div className="font-serif text-xl text-bone">EDZ</div>
+                <div className="font-serif text-xl text-bone">EZD</div>
                 <div className="text-[9px] uppercase tracking-[0.3em] text-stone">
                   Cipreses 343 · San Isidro
                 </div>
@@ -27,11 +27,11 @@ export function Footer() {
 
           <FooterCol title="Proyecto" items={["El edificio", "Arquitectura", "Interiores", "Departamentos"]} />
           <FooterCol title="Visita" items={["Agendar", "Brochure", "WhatsApp", "Ubicación"]} />
-          <FooterCol title="Contacto" items={["ventas@edzcipreses.com", "+51 953 849 058", "Lun – Sáb · 9–18h"]} />
+          <FooterCol title="Contacto" items={["ventas@EZDcipreses.com", "+51 953 849 058", "Lun – Sáb · 9–18h"]} />
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-white/5 pt-8 text-[10px] uppercase tracking-[0.3em] text-bone/40 lg:flex-row lg:items-center">
-          <span>© {new Date().getFullYear()} EDZ Cipreses 343 — All rights reserved</span>
+          <span>© {new Date().getFullYear()} EZD Cipreses 343 — All rights reserved</span>
           <span>San Isidro · Lima · Perú</span>
         </div>
       </div>

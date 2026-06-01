@@ -1,4 +1,4 @@
-# EDZ Cipreses 343 - React + Vite
+# EZD Cipreses 343 - React + Vite
 
 Proyecto convertido de TanStack Start/Lovable a React + Vite puro.
 

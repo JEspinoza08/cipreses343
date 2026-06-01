@@ -2,10 +2,10 @@ import { Reveal } from "./Reveal";
 import { MapPin } from "lucide-react";
 
 const highlights = [
-  { t: "Distrito financiero", d: "A pasos de las principales sedes corporativas de Lima." },
-  { t: "Gastronomía", d: "Restaurantes de autor, cafés y boutiques exclusivas." },
-  { t: "Parques", d: "El Olivar y áreas verdes a minutos caminando." },
-  { t: "Conectividad", d: "Vías rápidas hacia Miraflores, Surco y el aeropuerto." },
+  { t: "Distrito financiero", d: "A pasos del Centro Financiero de San Isidro, el Swissotel y las principales sedes corporativas de Lima." },
+  { t: "Gastronomía y comercio", d: "Cerca de la zona comercial de Miguel Dasso, restaurantes de autor y el Óvalo Gutiérrez." },
+  { t: "Parques", d: "A pasos del Parque El Olivar y del Golf de San Isidro." },
+  { t: "Conectividad", d: "Próximo a la Av. Los Conquistadores, con fácil acceso a Miraflores y Surco." },
 ];
 
 export function Location() {
@@ -31,8 +31,7 @@ export function Location() {
               <span className="block italic text-beige">San Isidro.</span>
             </h2>
             <p className="mt-8 text-base font-light leading-loose text-bone/70">
-              Un emplazamiento privilegiado en el distrito más codiciado de
-              Lima. Cerca de todo lo que importa, lejos del ruido.
+              Un emplazamiento privilegiado en el distrito más exclusivo de Lima. A pasos de todo lo que importa, en una calle tranquila y llena de árboles.
             </p>
 
             <div className="mt-12 space-y-6">
@@ -55,7 +54,7 @@ export function Location() {
               <iframe
                 title="Mapa Cipreses 343 San Isidro"
                 src="https://www.google.com/maps?q=Calle+Los+Cipreses+343+San+Isidro+Lima&output=embed"
-                className="h-full w-full grayscale invert-[0.92] hue-rotate-180"
+                className="h-full w-full brightness-75 contrast-110"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

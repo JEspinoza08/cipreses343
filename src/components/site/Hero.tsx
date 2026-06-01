@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 import { ArrowDown } from "lucide-react";
-import hero from "@/assets/hero-building.jpg";
+import hero from "@/assets/EZD/home-principal.png";
 
 export function Hero() {
   return (
     <section id="top" className="relative h-[100svh] w-full overflow-hidden grain">
       <motion.img
         src={hero}
-        alt="EDZ Cipreses 343 — fachada nocturna"
+        alt="EZD Cipreses 343 — fachada nocturna"
         initial={{ scale: 1.15 }}
         animate={{ scale: 1 }}
         transition={{ duration: 3.2, ease: [0.2, 0.7, 0.2, 1] }}
@@ -37,7 +37,7 @@ export function Hero() {
           transition={{ duration: 1.6, delay: 0.7, ease: [0.2, 0.7, 0.2, 1] }}
           className="font-serif text-[clamp(3rem,9vw,8.5rem)] leading-[0.95] text-bone"
         >
-          EDZ
+          EZD
           <span className="block italic text-beige/90">Cipreses 343</span>
         </motion.h1>
 
@@ -47,9 +47,7 @@ export function Hero() {
           transition={{ duration: 1.4, delay: 1.2 }}
           className="mt-8 max-w-xl text-base font-light leading-relaxed text-bone/70"
         >
-          Una residencia exclusiva concebida para quienes entienden el lujo como
-          la pureza de los detalles. Arquitectura atemporal en el corazón
-          financiero de Lima.
+          Edificio residencial boutique en la zona más exclusiva de San Isidro, a pasos del Centro Empresarial. Diseño atemporal, acabados de primera y espacios amplios con luz natural.
         </motion.p>
 
         <motion.div

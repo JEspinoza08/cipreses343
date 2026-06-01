@@ -1,10 +1,26 @@
 import { Reveal } from "./Reveal";
 
 const pillars = [
-  { n: "01", t: "Exclusividad", d: "Pocas residencias por nivel. Privacidad absoluta." },
-  { n: "02", t: "Arquitectura", d: "Líneas puras, materiales nobles, luz natural." },
-  { n: "03", t: "Ubicación", d: "El corazón financiero y residencial de San Isidro." },
-  { n: "04", t: "Acabados", d: "Roble europeo, mármol, bronce y piedra natural." },
+  {
+    n: "01",
+    t: "Exclusividad",
+    d: "Pocas residencias por nivel. Privacidad y tranquilidad absoluta.",
+  },
+  {
+    n: "02",
+    t: "Arquitectura",
+    d: "Líneas puras y luz natural como protagonista.",
+  },
+  {
+    n: "03",
+    t: "Ubicación",
+    d: "A pasos del Parque El Olivar, en la zona más exclusiva de San Isidro.",
+  },
+  {
+    n: "04",
+    t: "Acabados",
+    d: "Piso de bambú, tableros de granito o mármol, ventanas europeas aislantes y gas natural.",
+  },
 ];
 
 export function About() {
@@ -23,24 +39,25 @@ export function About() {
         <div className="grid gap-16 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
             <h2 className="font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] text-bone">
-              Un refugio
-              <span className="block italic text-beige">contemporáneo</span>
-              <span className="block">en San Isidro.</span>
-            </h2>
+  Un edificio boutique,
+  <span className="block italic text-beige">
+    en el corazón de San Isidro.
+  </span>
+</h2>
           </Reveal>
 
           <Reveal delay={0.15} className="lg:col-span-5">
             <p className="text-base font-light leading-loose text-bone/70">
-              EDZ Cipreses 343 es una colección limitada de residencias
-              concebidas para una vida discreta, sofisticada y conectada. Una
-              fachada de piedra y vidrio enmarcada por la energía del distrito
-              más exclusivo de Lima, con interiores diseñados como un manifiesto
-              de elegancia atemporal.
-            </p>
-            <p className="mt-6 text-base font-light leading-loose text-bone/70">
-              Cada espacio respira luz, silencio y materia noble. Una propuesta
-              residencial sin precedentes en el Perú.
-            </p>
+  Cipreses 343 es un edificio residencial boutique diseñado por el
+  reconocido arquitecto Mario Lara, ubicado en una tranquila calle
+  arbolada a pasos del emblemático Parque El Olivar.
+</p>
+
+<p className="mt-6 text-base font-light leading-loose text-bone/70">
+  Una colección limitada de departamentos amplios, cómodos y bien
+  distribuidos, con acabados de lujo y espacios llenos de luz natural.
+  El sitio ideal para vivir en la mejor zona de San Isidro.
+</p>
           </Reveal>
         </div>
 

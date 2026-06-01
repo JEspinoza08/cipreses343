@@ -15,23 +15,22 @@ export function Contact() {
               </span>
             </div>
             <h2 className="font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] text-bone">
-              Una asesoría
-              <span className="block italic text-beige">personalizada.</span>
+              Cipreses 343,
+<span className="block italic text-beige">San Isidro.</span>
             </h2>
             <p className="mt-8 text-base font-light leading-loose text-bone/70">
-              Conozca EDZ Cipreses 343 acompañado por uno de nuestros asesores
-              privados. Visitas con cita previa, atención discreta y
-              exclusivamente para clientes calificados.
+              Un emplazamiento privilegiado en el distrito más exclusivo de Lima.
+A pasos de todo lo que importa, en una calle tranquila y llena de árboles.
             </p>
 
             <div className="mt-12 space-y-5 text-sm">
               <Row label="Dirección" value="Calle Los Cipreses 343, San Isidro · Lima" />
-              <Row label="Correo" value="ventas@edzcipreses.com" />
+              <Row label="Correo" value="ventas@ezd.com.pe" />
               <Row label="Teléfono" value="+51 953 849 058" />
             </div>
 
             <a
-              href="https://wa.me/51953849058?text=Hola,%20me%20interesa%20EDZ%20Cipreses%20343"
+              href="https://wa.me/51953849058?text=Hola,%20me%20interesa%20EZD%20Cipreses%20343"
               target="_blank"
               rel="noreferrer"
               className="mt-10 inline-flex items-center gap-3 border border-gold/50 px-7 py-4 text-[11px] uppercase tracking-[0.25em] text-gold transition-all duration-500 hover:bg-gold hover:text-ink"
@@ -43,24 +42,51 @@ export function Contact() {
           <Reveal delay={0.15} className="lg:col-span-7">
             <div className="relative border border-white/10 bg-charcoal/30 p-8 lg:p-12">
               <div className="absolute -top-3 left-12 bg-ink px-3 text-[10px] uppercase tracking-[0.3em] text-gold">
-                Reserve su visita
+                Agende una visita
               </div>
 
               {sent ? (
                 <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
                   <div className="font-serif text-3xl text-bone">Gracias.</div>
                   <div className="mt-3 max-w-sm text-sm font-light text-bone/60">
-                    Un asesor privado se pondrá en contacto en breve para
-                    coordinar su visita.
+                    Un asesor se pondrá en contacto en breve para coordinar su visita.
                   </div>
                 </div>
               ) : (
                 <form
                   className="grid gap-6 sm:grid-cols-2"
                   onSubmit={(e) => {
-                    e.preventDefault();
-                    setSent(true);
-                  }}
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const data = new FormData(form);
+
+  const nombre = data.get("name");
+  const apellido = data.get("last");
+  const correo = data.get("email");
+  const telefono = data.get("phone");
+  const tipologia = data.get("unit");
+  const mensaje = data.get("message");
+
+  const whatsappMessage = `
+Hola, me interesa EZD Cipreses 343.
+
+Nombre: ${nombre}
+Apellido: ${apellido}
+Correo: ${correo}
+Teléfono: ${telefono}
+Tipología de interés: ${tipologia}
+Mensaje: ${mensaje}
+`;
+
+  const phoneNumber = "51953849058";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
+  window.open(url, "_blank");
+  setSent(true);
+}}
                 >
                   <Field label="Nombre" name="name" />
                   <Field label="Apellido" name="last" />
@@ -74,6 +100,7 @@ export function Contact() {
                       Mensaje
                     </label>
                     <textarea
+                    name="message"
                       rows={4}
                       className="mt-2 w-full border-b border-white/15 bg-transparent py-3 text-sm font-light text-bone outline-none transition-colors focus:border-gold"
                     />

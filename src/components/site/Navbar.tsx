@@ -6,7 +6,7 @@ const links = [
   { label: "Proyecto", href: "#proyecto" },
   { label: "Arquitectura", href: "#arquitectura" },
   { label: "Interiores", href: "#interiores" },
-  { label: "Departamentos", href: "#departamentos" },
+  // { label: "Departamentos", href: "#departamentos" },
   { label: "Galería", href: "#galeria" },
   { label: "Ubicación", href: "#ubicacion" },
   { label: "Contacto", href: "#contacto" },
@@ -35,11 +35,11 @@ export function Navbar() {
         <a href="#top" className="flex items-center gap-3">
           <img
             src={logo}
-            alt="EDZ Cipreses 343"
+            alt="EZD Cipreses 343"
             className="h-10 w-10 rounded-sm object-cover ring-1 ring-white/10"
           />
           <div className="hidden flex-col leading-none sm:flex">
-            <span className="font-serif text-lg text-bone">EDZ</span>
+            <span className="font-serif text-lg text-bone">EZD</span>
             <span className="text-[9px] uppercase tracking-[0.3em] text-stone">
               Cipreses 343
             </span>

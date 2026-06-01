@@ -23,7 +23,7 @@ export function Loader() {
               transition={{ duration: 1.2, ease: [0.2, 0.7, 0.2, 1] }}
               className="font-serif text-4xl text-bone"
             >
-              EDZ
+              EZD
             </motion.div>
             <div className="h-px w-32 overflow-hidden bg-white/10">
               <motion.div

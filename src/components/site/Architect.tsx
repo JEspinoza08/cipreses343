@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import mario from "@/assets/mario-lara.png";
+import mario from "@/assets/EZD/mario-lara.png";
 
 export function Architect() {
   return (
@@ -52,11 +52,11 @@ export function Architect() {
           <Reveal delay={0.3}>
             <div className="mt-12 grid grid-cols-1 gap-px border border-white/5 sm:grid-cols-2">
               {[
-                ["Luz natural", "Aperturas que dialogan con la orientación solar."],
-                ["Materia noble", "Piedra, madera, bronce y vidrio."],
-                ["Líneas puras", "Geometría limpia y silenciosa."],
-                ["Atemporalidad", "Diseño que trasciende décadas."],
-              ].map(([t, d]) => (
+  ["Luz natural", "Aperturas orientadas para maximizar la entrada de luz en cada espacio."],
+  ["Materia noble", "Bambú, granito, mármol y detalles en bronce."],
+  ["Líneas puras", "Geometría limpia y silenciosa que trasciende las tendencias."],
+  ["Atemporalidad", "Diseño concebido para durar y envejecer con elegancia."],
+].map(([t, d]) => (
                 <div key={t} className="bg-ink/60 p-6">
                   <div className="font-serif text-lg text-bone">{t}</div>
                   <div className="mt-2 text-xs font-light leading-relaxed text-bone/60">

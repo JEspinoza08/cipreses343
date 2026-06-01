@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/51953849058?text=Hola,%20me%20interesa%20EDZ%20Cipreses%20343"
+      href="https://wa.me/51953849058?text=Hola,%20me%20interesa%20EZD%20Cipreses%20343"
       target="_blank"
       rel="noreferrer"
       aria-label="WhatsApp"

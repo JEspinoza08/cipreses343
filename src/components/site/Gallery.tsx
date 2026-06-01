@@ -1,20 +1,20 @@
 import { Reveal } from "./Reveal";
-import facade from "@/assets/gallery-facade.jpg";
-import lobby from "@/assets/gallery-lobby.jpg";
-import living from "@/assets/gallery-living.jpg";
-import bedroom from "@/assets/gallery-bedroom.jpg";
-import kitchen from "@/assets/gallery-kitchen.jpg";
-import rooftop from "@/assets/gallery-rooftop.jpg";
-import aerial from "@/assets/gallery-aerial.jpg";
+import facade from "@/assets/EZD/optimizado/galeria-1.webp";
+import living from "@/assets/EZD/optimizado/galeria-2.webp";
+import kitchen from "@/assets/EZD/optimizado/galeria-3.webp";
+import lobby from "@/assets/EZD/optimizado/galeria-4.webp";
+import rooftop from "@/assets/EZD/optimizado/galeria-5.webp";
+import terrace2 from "@/assets/EZD/optimizado/galeria-6.webp";
+import terrace3 from "@/assets/EZD/optimizado/galeria-7.webp";
 
 const items = [
   { src: facade, label: "Fachada", span: "lg:col-span-4 lg:row-span-2" },
   { src: living, label: "Living", span: "lg:col-span-4" },
-  { src: lobby, label: "Lobby", span: "lg:col-span-4 lg:row-span-2" },
   { src: kitchen, label: "Cocina", span: "lg:col-span-4" },
-  { src: bedroom, label: "Dormitorio", span: "lg:col-span-4" },
-  { src: rooftop, label: "Rooftop", span: "lg:col-span-4" },
-  { src: aerial, label: "Aéreo nocturno", span: "lg:col-span-8" },
+  { src: lobby, label: "Lobby", span: "lg:col-span-4" },
+  { src: rooftop, label: "Terraza", span: "lg:col-span-4" },
+  { src: terrace2, label: "Terraza", span: "lg:col-span-4" },
+  { src: terrace3, label: "Terraza", span: "lg:col-span-4" },
 ];
 
 export function Gallery() {
@@ -37,8 +37,7 @@ export function Gallery() {
               <span className="italic text-beige"> el silencio.</span>
             </h2>
             <p className="max-w-sm text-sm font-light leading-relaxed text-bone/60">
-              Renders cinematográficos que capturan la esencia del proyecto: una
-              residencia diseñada para ser fotografiada todos los días.
+              Imágenes del proyecto que capturan la esencia del Edificio Cipreses: una residencia diseñada con atención al detalle, materiales selectos y espacios pensados para vivir con comodidad y elegancia en San Isidro.
             </p>
           </div>
         </Reveal>

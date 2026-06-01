@@ -20,7 +20,7 @@ export default function App() {
       <About />
       <Architect />
       <Interior />
-      <Apartments />
+      {/* <Apartments /> */}
       <Gallery />
       <Location />
       <Contact />

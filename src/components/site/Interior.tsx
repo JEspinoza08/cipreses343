@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import vera from "@/assets/vera-velarde.png";
+import vera from "@/assets/EZD/vera-velarde.png";
 
 export function Interior() {
   return (
@@ -26,22 +26,18 @@ export function Interior() {
 
           <Reveal delay={0.2}>
             <p className="mt-10 text-base font-light leading-loose text-bone/70">
-              Arquitecta y diseñadora peruana, destaca por crear espacios
-              atemporales y funcionales con un estilo cálido y sofisticado. Sus
-              interiores combinan texturas naturales, paletas serenas y piezas
-              de autor para componer hogares íntimos, refinados y profundamente
-              habitables.
+              Arquitecta y diseñadora peruana que destaca por crear espacios atemporales y funcionales con un estilo cálido y sofisticado. Con proyectos en el Perú y el extranjero, y como cofundadora de Veralima, lleva el diseño interior a un nivel accesible, personalizado y lleno de propósito.
             </p>
           </Reveal>
 
           <Reveal delay={0.3}>
             <ul className="mt-12 space-y-4 text-sm font-light text-bone/70">
               {[
-                "Texturas naturales y paleta cálida",
-                "Mobiliario de autor y piezas únicas",
-                "Iluminación arquitectónica integrada",
-                "Funcionalidad sin renunciar al refinamiento",
-              ].map((t) => (
+  "Espacios atemporales y funcionales",
+  "Estilo cálido y sofisticado",
+  "Proyectos en Perú y el extranjero",
+  "Cofundadora de Veralima",
+].map((t) => (
                 <li key={t} className="flex items-center gap-4">
                   <span className="h-px w-6 bg-gold" />
                   {t}
