@@ -1,11 +1,11 @@
 import { Reveal } from "./Reveal";
-import facade from "@/assets/EZD/optimizado/galeria-1.webp";
-import living from "@/assets/EZD/optimizado/galeria-2.webp";
-import kitchen from "@/assets/EZD/optimizado/galeria-3.webp";
-import lobby from "@/assets/EZD/optimizado/galeria-4.webp";
-import rooftop from "@/assets/EZD/optimizado/galeria-5.webp";
-import terrace2 from "@/assets/EZD/optimizado/galeria-6.webp";
-import terrace3 from "@/assets/EZD/optimizado/galeria-7.webp";
+import facade from "@/assets/EZD/optimizado/fachada.webp";
+import living from "@/assets/EZD/optimizado/living.webp";
+import kitchen from "@/assets/EZD/optimizado/kitchen.webp";
+import lobby from "@/assets/EZD/optimizado/lobby.webp";
+import rooftop from "@/assets/EZD/optimizado/rof.webp";
+import terrace2 from "@/assets/EZD/optimizado/rof2.webp";
+import terrace3 from "@/assets/EZD/optimizado/rof3.webp";
 
 const items = [
   { src: facade, label: "Fachada", span: "lg:col-span-4 lg:row-span-2" },
