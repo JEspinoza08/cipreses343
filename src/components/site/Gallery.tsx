@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import home from "@/assets/EZD/optimizado/home-principal2.webp";
 import facade from "@/assets/EZD/optimizado/fachada.webp";
 import living from "@/assets/EZD/optimizado/living.webp";
 import kitchen from "@/assets/EZD/optimizado/kitchen.webp";
@@ -8,13 +9,14 @@ import terrace2 from "@/assets/EZD/optimizado/rof2.webp";
 import terrace3 from "@/assets/EZD/optimizado/rof3.webp";
 
 const items = [
-  { src: facade, label: "Fachada", span: "lg:col-span-4 lg:row-span-2" },
+  { src: home, label: "Fachada", span: "lg:col-span-4 lg:row-span-2" },
   { src: living, label: "Living", span: "lg:col-span-4" },
+  { src: facade, label: "Cocina", span: "lg:col-span-4 lg:row-span-2" },
   { src: kitchen, label: "Cocina", span: "lg:col-span-4" },
-  { src: lobby, label: "Lobby", span: "lg:col-span-4" },
+  { src: lobby, label: "Sala de estar", span: "lg:col-span-4" },
+  { src: terrace3, label: "Sala / Comedor", span: "lg:col-span-4" },
   { src: rooftop, label: "Terraza", span: "lg:col-span-4" },
   { src: terrace2, label: "Terraza", span: "lg:col-span-4" },
-  { src: terrace3, label: "Terraza", span: "lg:col-span-4" },
 ];
 
 export function Gallery() {
