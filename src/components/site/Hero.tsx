@@ -4,6 +4,21 @@ import hero from "@/assets/EZD/home-principal.png";
 import brochure from "@/assets/CIPRESES_Brochure_.pdf";
 
 export function Hero() {
+  const handleDownloadBrochure = async () => {
+  const response = await fetch(brochure);
+  const blob = await response.blob();
+
+  const url = window.URL.createObjectURL(blob);
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "CIPRESES_Brochure_.pdf";
+  document.body.appendChild(link);
+  link.click();
+
+  document.body.removeChild(link);
+  window.URL.revokeObjectURL(url);
+};
   return (
     <section id="top" className="relative h-[100svh] w-full overflow-hidden grain">
       <motion.img
@@ -64,13 +79,13 @@ export function Hero() {
             Agendar una visita
             <span className="h-px w-6 bg-ink transition-all duration-500 group-hover:w-10" />
           </a>
-          <a
-  href={brochure}
-  download="EZD-Cipreses-343-Brochure.pdf"
+          <button
+  type="button"
+  onClick={handleDownloadBrochure}
   className="inline-flex items-center gap-3 border border-white/20 px-7 py-4 text-[11px] uppercase tracking-[0.25em] text-bone transition-all duration-500 hover:border-gold hover:text-gold"
 >
   Descargar brochure
-</a>
+</button>
           <a
             href="https://wa.me/51953849058"
             target="_blank"
