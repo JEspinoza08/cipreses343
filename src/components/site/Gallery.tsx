@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import { useState } from "react";
 import home from "@/assets/EZD/optimizado/home-principal2.webp";
 import facade from "@/assets/EZD/optimizado/fachada.webp";
 import living from "@/assets/EZD/optimizado/living.webp";
@@ -20,6 +21,8 @@ const items = [
 ];
 
 export function Gallery() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="galeria" className="relative bg-ink py-32 lg:py-48">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
@@ -47,10 +50,14 @@ export function Gallery() {
         <div className="grid auto-rows-[220px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12">
           {items.map((it, i) => (
             <Reveal
-              key={it.label}
-              delay={i * 0.06}
-              className={`group relative overflow-hidden ${it.span}`}
-            >
+  key={i}
+  delay={i * 0.06}
+  className={`${it.span}`}
+>
+  <div
+    className="group relative h-full w-full overflow-hidden cursor-pointer"
+    onClick={() => setSelectedImage(it.src)}
+  >
               <img
                 src={it.src}
                 alt={it.label}
@@ -61,10 +68,31 @@ export function Gallery() {
               <div className="absolute bottom-5 left-5 text-[10px] uppercase tracking-[0.3em] text-bone/80">
                 {it.label}
               </div>
+              </div>
             </Reveal>
           ))}
         </div>
       </div>
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="absolute right-6 top-6 text-4xl text-white"
+            onClick={() => setSelectedImage(null)}
+          >
+            ×
+          </button>
+
+          <img
+            src={selectedImage}
+            alt="Imagen ampliada"
+            className="max-h-[90vh] max-w-[90vw] rounded-md object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 }

@@ -8,6 +8,7 @@ const links = [
   { label: "Interiores", href: "#interiores" },
   // { label: "Departamentos", href: "#departamentos" },
   { label: "Galería", href: "#galeria" },
+  { label: "Planos", href: "#planos" },
   { label: "Ubicación", href: "#ubicacion" },
   { label: "Contacto", href: "#contacto" },
 ];

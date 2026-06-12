@@ -10,6 +10,7 @@ import { Location } from "@/components/site/Location";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsApp";
+import { Plans } from "@/components/site/Plans";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <Interior />
       {/* <Apartments /> */}
       <Gallery />
+      <Plans />
       <Location />
       <Contact />
       <Footer />
