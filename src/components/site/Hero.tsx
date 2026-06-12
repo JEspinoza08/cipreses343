@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowDown } from "lucide-react";
 import hero from "@/assets/EZD/home-principal.png";
+import brochure from "@/assets/CIPRESES_Brochure_.pdf";
 
 export function Hero() {
   return (
@@ -64,11 +65,12 @@ export function Hero() {
             <span className="h-px w-6 bg-ink transition-all duration-500 group-hover:w-10" />
           </a>
           <a
-            href="#proyecto"
-            className="inline-flex items-center gap-3 border border-white/20 px-7 py-4 text-[11px] uppercase tracking-[0.25em] text-bone transition-all duration-500 hover:border-gold hover:text-gold"
-          >
-            Visualizar brochure
-          </a>
+  href={brochure}
+  download="EZD-Cipreses-343-Brochure.pdf"
+  className="inline-flex items-center gap-3 border border-white/20 px-7 py-4 text-[11px] uppercase tracking-[0.25em] text-bone transition-all duration-500 hover:border-gold hover:text-gold"
+>
+  Descargar brochure
+</a>
           <a
             href="https://wa.me/51953849058"
             target="_blank"
